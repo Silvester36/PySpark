@@ -11,3 +11,5 @@ value = [(1,'Silvester'),(2,'Silva'),(3,'Silvester Silva')]
 df = spark.createDataFrame(value,schema)
 
 df.show()
+
+df.printSchema()
