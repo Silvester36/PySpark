@@ -10,6 +10,7 @@ schema = StructType([StructField('Region',StringType(),True),
                      StructField("Cost",IntegerType(),True)])
 df = spark.read.csv(path="D:\Sales.csv",header= True, schema = schema)
 
-df.show()
+df.show(n=1,truncate= 10)
 
 df.printSchema()
+df.show()
