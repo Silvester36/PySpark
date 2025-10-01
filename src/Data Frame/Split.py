@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.types import StructType,StructField,StringType,IntegerType,ArrayType
-from pyspark.sql.functions import col, explode, split
+from pyspark.sql.types import StructType,StructField,StringType
+from pyspark.sql.functions import col, split
 
 df = [("Silvester",['Python,Java']),("Roshan",['C++,C'])]
 
